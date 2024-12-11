@@ -1,0 +1,98 @@
+/* Conteneur principal */
+.register-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fbeae7; /* Beige rosé */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+  
+  /* Titre principal */
+  .register-container h1 {
+    color: #d1736a; /* Rouge doux */
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Labels */
+  form label {
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    color: #5a4e4d; /* Marron doux */
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Champs d'entrée */
+  form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+  }
+  
+  /* Placeholder styles */
+  form input::placeholder {
+    color: #b3a8a6;
+  }
+  
+  /* Bouton */
+  form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #d1736a; /* Rouge doux */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  form button:hover {
+    background-color: #b15e56; /* Rouge plus foncé */
+    transform: scale(1.03);
+  }
+  
+  /* Texte de compte existant */
+  .already-account {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #5a4e4d;
+  }
+  
+  .already-account a {
+    color: #d1736a;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .already-account a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive */
+  @media (max-width: 576px) {
+    .register-container {
+      padding: 20px;
+    }
+  
+    .register-container h1 {
+      font-size: 24px;
+    }
+  
+    form input,
+    form button {
+      font-size: 14px;
+    }
+  }
+  

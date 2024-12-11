@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+/* Styles généraux */
+body {
+    background-image: url('images/couv4.avif'); /* Chemin de l'image */
+    background-size: cover; /* L'image couvre toute la page */
+    background-repeat: no-repeat; /* Pas de répétition de l'image */
+    background-position: center; /* Centre l'image */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Barre verte supérieure */
+.top-bar {
+    background-color: #b1876d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.top-bar {
+    background-color: #b1876d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Section logo et titre */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-container img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.logo-container h1 {
+    font-family: 'Playfair Display', serif;
+    color: #e6bfa7;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.logo-container h1:hover {
+    color: #e09c8a;
+    transform: scale(1.05);
+}
+
+
+/* Barre de navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color:#ccb1a1 ;
+    padding: 10px 0;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Contenu principal */
+.container {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.header-section h1 {
+    font-size: 28px;
+    color: #228B22;
+}
+
+.header-section p {
+    font-size: 18px;
+    color: #666;
+    margin-top: 10px;
+}
+
+
+/* Image avant les produits */
+.product-image img {
+    width: 100%;
+    display: block;
+}
+
+/* Section produits */
+.products-section {
+    width: 100%;
+    padding: 0;
+    margin :0;
+    box-sizing: border-box;
+}
+
+.products-title {
+    font-family: 'Playfair Display', serif; /* Police élégante */
+    color: #D8A7A1; /* Beige-rose */
+    font-size: 28px; /* Taille de police ajustée */
+    margin-bottom: 50px;
+    margin-top: 150px;
+    text-align: left;
+    letter-spacing: 1px; /* Espacement des lettres */
+    text-transform: uppercase; /* Mettre en majuscules */
+} 
+
+
+/* Grille des produits */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Chaque produit prend au moins 300px et occupe toute la largeur disponible */
+    gap: 20px;
+    width: 100%; /* S'assure que la grille occupe toute la largeur de la page */
+    margin: 0; /* Centrer les produits */
+    padding: 0;
+}
+
+/* Carte produit */
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+    width: 100%; /* Utilise toute la largeur disponible dans la grille */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image du produit */
+.product-card img {
+    width: 100%;
+    height: 500px; /* Augmenter la hauteur de l'image pour qu'elle soit plus visible */
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-card h3 {
+    font-size: 18px;
+    color: #0c2e60;
+    margin: 10px 0;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.product-card .price {
+    font-size: 16px;
+    color: #228B22;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.product-card button {
+    background-color: #228B22;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background-color: #1e7d1e;
+}
+
+/* Section Contact */
+.marque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Pied de page */
+footer {
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+.login-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.login-container a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #117a37;
+    transition: color 0.3s, transform 0.3s;
+    margin-right: 10px;
+}
+
+.login-container a:hover {
+    color: #0e6b30;
+    transform: scale(1.1);
+}
+
+
+/* Contact section */
+.contact-section {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.contact-section a {
+    display: inline-block;
+    background-color: #a8665e;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px 30px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section a:hover {
+    background-color: #1e7a1e;
+}
+
+
+        /* Footer */
+        .footer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #000;
+    color: white;
+}
+
+.footer-left {
+    width: 45%;
+}
+
+.footer-left img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    margin: 10px 0;
+}
+
+.footer-right {
+    width: 45%;
+    text-align: center;
+}
+
+.footer-right a {
+    color: #ff663b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+.footer-right p {
+    margin: 10px 0;
+}
+
+.footer-bottom {
+    background-color: #f5f5f5;
+    color: #666;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-center {
+    text-align: center;
+    
+}
+
+.about-box {
+width: 400px; /* Largeur de la boîte */
+padding: 15px; /* Espace interne pour aérer le texte */
+margin-left: 210px !important; /* Centrer horizontalement et ajouter une marge verticale */
+background-color: #000000; /* Couleur de fond douce */
+font-size: 16px; /* Taille de la police */
+line-height: 1.5; /* Espacement entre les lignes pour une meilleure lisibilité */
+}
+
+.features-section {
+    display: flex;
+    justify-content: space-around; /* Espace entre les éléments */
+    align-items: center;
+    padding: 20px 0; /* Espacement vertical */
+    margin-top: 70px;
+}
+
+.feature {
+    text-align: center; /* Centrer le contenu de chaque élément */
+    width: 150px; /* Largeur de chaque bloc */
+}
+
+.feature-icon {
+    width: 50px; /* Taille des icônes */
+    margin-bottom: 10px; /* Espacement entre l'icône et le texte */
+}
+
+.features-section h4 {
+    font-size: 24px; /* Taille des titres */
+    font-weight: bold; /* Mettre les titres en gras */
+    margin: 10px 0; /* Espacement vertical des titres */
+    color: #000000; /* Couleur du texte des titres */
+}
+
+.features-section p {
+    font-size: 20px; /* Taille du texte des descriptions */
+    color: #666666; /* Couleur du texte des descriptions */
+    line-height: 1.5; /* Espacement entre les lignes */
+}
+
+.nos_marques{
+font-size: 35px;
+color :#a13124;
+text-align: center;
+font-weight: bold;
+margin-top: 50px;
+margin-bottom: 40px;
+}
+
+/* Bande grise */
+.brand-banner {
+background-color: #ddd1c6; /* Fond gris clair */
+padding: 30px 0; /* Espacement vertical */
+overflow: hidden; /* Masquer les logos hors de la bande */
+position: relative; /* Nécessaire pour l'animation */
+border-top: 2px solid #ccc; /* Ligne de séparation au-dessus */
+border-bottom: 2px solid #ccc; /* Ligne de séparation en bas */
+}
+/* Slider contenant les groupes */
+.brand-slider {
+display: flex;
+animation: slide-groups 20s linear infinite; /* Animation plus lente */
+}
+
+/* Groupe de 4 logos */
+.brand-group {
+display: flex;
+justify-content: space-around; /* Uniformise l'espacement entre les logos */
+min-width: 100%; /* Chaque groupe occupe toute la largeur */
+}
+
+/* Logos individuels */
+.brand-group img {
+width: 120px; /* Taille des logos */
+height: 120px; /* Assurez-vous que toutes les images ont la même hauteur */
+object-fit: contain; /* Maintient les proportions des logos */
+margin: 0 20px; /* Espacement uniforme entre les logos */
+transition: transform 0.3s ease-in-out; /* Effet au survol */
+}
+
+/* Effet au survol */
+.brand-group img:hover {
+    transform: scale(1.2); /* Agrandir légèrement */
+}
+
+@keyframes slide-groups {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

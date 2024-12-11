@@ -1,0 +1,103 @@
+.payment-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #fdf2f0; /* Beige rosé */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.payment-container:hover {
+    transform: translateY(-5px); /* Légère élévation au survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.payment-container h2 {
+    font-size: 26px;
+    color: #b56576; /* Couleur rosée foncée */
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-icons img {
+    width: 50px;
+    margin: 0 15px;
+    transition: transform 0.3s ease;
+}
+
+.card-icons img:hover {
+    transform: scale(1.1); /* Zoom au survol */
+}
+
+.payment-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.payment-container form label {
+    align-self: flex-start;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #b56576; /* Couleur rosée foncée */
+}
+
+.payment-container form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #e0a9a5; /* Couleur de bordure douce */
+    border-radius: 8px;
+    font-size: 16px;
+    background: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.payment-container form input:focus {
+    border-color: #b56576; /* Bordure rosée au focus */
+    outline: none;
+    box-shadow: 0 0 8px rgba(181, 101, 118, 0.4);
+}
+
+.payment-container form button {
+    padding: 12px 20px;
+    background-color: #b56576; /* Beige rosé foncé */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.payment-container form button:hover {
+    background-color: #8d3b4c; /* Couleur plus foncée au survol */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.payment-container form button:active {
+    transform: translateY(1px); /* Légère pression au clic */
+}
+
+.payment-container .create-account {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #b56576;
+}
+
+.payment-container .create-account a {
+    color: #8d3b4c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.payment-container .create-account a:hover {
+    color: #5d202e;
+    text-decoration: underline;
+}

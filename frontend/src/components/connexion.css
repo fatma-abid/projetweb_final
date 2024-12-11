@@ -1,0 +1,116 @@
+/* Conteneur principal de connexion */
+.log-container {
+    margin: 100px auto;
+    max-width: 600px; /* Plus large */
+    padding: 30px;
+    background: #fdf2f0; /* Beige rosé */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.log-container:hover {
+    transform: translateY(-5px); /* Léger effet de survol */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Titre de la section */
+.log-container h1 {
+    color: #b56576; /* Couleur rosée foncée */
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Label des champs */
+#login-form label {
+    display: block;
+    font-weight: bold;
+    color: #b56576;
+    font-size: 16px;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+/* Champs de saisie */
+#login-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e0a9a5;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+#login-form input:focus {
+    border-color: #b56576;
+    outline: none;
+    box-shadow: 0 0 5px rgba(181, 101, 118, 0.5);
+}
+
+/* Conteneur pour le champ mot de passe */
+.password-container {
+    position: relative;
+}
+
+.password-container .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: #b56576;
+    transition: color 0.3s ease;
+}
+
+.password-container .toggle-password:hover {
+    color: #8d3b4c;
+}
+
+/* Conteneur du bouton */
+.button-container {
+    margin-top: 20px;
+}
+
+.button-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #b56576;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-container button:hover {
+    background-color: #8d3b4c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Lien pour créer un compte */
+.create-account {
+    margin-top: 25px;
+    color: #b56576;
+    font-size: 16px;
+}
+
+.create-account a {
+    color: #8d3b4c;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.create-account a:hover {
+    color: #5d202e;
+    text-decoration: underline;
+}

@@ -1,0 +1,80 @@
+/* Conteneur principal de la page de contact */
+.contact-container {
+    margin: 80px auto;
+    max-width: 700px; /* Largeur optimale pour le contenu */
+    padding: 40px;
+    background: #fdf2f0; /* Beige rosé élégant */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-container:hover {
+    transform: translateY(-5px); /* Effet léger au survol */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Titre principal */
+.contact-container h1 {
+    color: #b56576; /* Rosé foncé */
+    font-size: 34px; /* Titre plus imposant */
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none; /* Supprime les barres */
+}
+
+/* Formulaire de contact */
+.contact-container form {
+    text-align: left;
+}
+
+/* Labels des champs */
+.contact-container label {
+    display: block;
+    font-weight: bold;
+    color: #b56576;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Champs de texte */
+.contact-container textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #e0a9a5;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+    resize: none; /* Empêche un redimensionnement gênant */
+}
+
+.contact-container textarea:focus {
+    border-color: #b56576;
+    outline: none;
+    box-shadow: 0 0 5px rgba(181, 101, 118, 0.5);
+}
+
+/* Bouton d'envoi */
+.contact-container button {
+    width: 100%;
+    padding: 15px;
+    background-color: #b56576;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-container button:hover {
+    background-color: #8d3b4c;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
